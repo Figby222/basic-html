@@ -2,12 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Lists and Images</title>
+        <title>Odin Links and Images</title>
     </head>
     
     <body>
         <h1>Homepage</h1>
-        <a href="https://www.theodinproject.com/about">click me, I am a link!</a>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me, I am a link!</a>
         <!-- <a>creates a link, but we have to add the href to the element -->
+        <!-- target="_blank" opens the link in a new tab -->
+        <!-- 
+            rel describes the relationship between the current page and the linked page or doc
+            noopener prevents the opened page from accessing the webapage from which it's been opened,
+            and noreferrer prevents the opened link from knowing which webpage or resource from which it's
+            been opened  
+        -->
+
+        <!-- 
+            Absolute links are defined as links to pages on a different website.
+            Relative links are links within the current website 
+            the href presented in this markup is an absolute link-->
+        
+        <p>If you want more information, check out the <a href="./pages/about.html">about</a>
+        page</p>
+        <!-- this is a relative link  -->
+        <!-- ./ means we're working in the current directory -->
+
+        <img src="./images/dog.jpg" alt="Image of Pug">
+        <!-- open image from relative path -->
+        
     </body>
 </html>
